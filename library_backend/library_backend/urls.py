@@ -1,0 +1,9 @@
+# the api link for library urls.py
+
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/', include('library_app.urls')),
+]
